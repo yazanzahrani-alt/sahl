@@ -1,0 +1,17 @@
+{
+  "name": "sahl",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+    "node": "22.x"
+  },
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "dev:backend": "npm run dev -w @sahl/backend",
+    "dev:frontend": "npm run dev -w @sahl/frontend"
+  }
+}
